@@ -1,50 +1,79 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  min-height: 100vh;
-  background: #0a1a2a;
-  overflow: hidden;
-  position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    background: #4a4035;
+    overflow: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .content {
 }
 
 .title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 5rem;
-  color: white;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-  white-space: nowrap;
-  z-index: 2;
-  mix-blend-mode: lighten;
-  font-family: 'I.Ngaan', system-ui;
-  font-weight: 400;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    white-space: nowrap;
+    z-index: 2;
+    mix-blend-mode: lighten;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'I.Ngaan', system-ui;
+    cursor: default;
+}
+
+ul.navs {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.navs li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+}
+
+ul.navs li a:visited {
+    color: white;
+    text-decoration: none;
 }
 
 .sky {
-  width: 100vw;
-  height: 100vh;
-  background: url(../img/1.jpg) center center no-repeat;
-  background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
 }
 
 #rain-curtain {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
 }
 
 .rain {
-  position: absolute;
-  width: 2px;
-  height: 50px;
-  background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .6));
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background: linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .6));
 }
